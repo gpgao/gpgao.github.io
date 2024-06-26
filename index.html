@@ -16,12 +16,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300italic,400,400italic,700,700italic%7CLong+Cang:300,300italic,400,400italic,700,700italic%7CSFMono-Regular:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"gpgao.top","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":true,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"gpgao.top","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":true,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="少年札记">
@@ -54,7 +53,7 @@
   </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="headband"></div>
 
   <main class="main">
@@ -80,7 +79,6 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -89,37 +87,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
 
 </header>
         
@@ -198,7 +170,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/">
+    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/he/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -216,7 +188,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅵ</a>
+          <a href="/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/he/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅵ</a>
         </h2>
 
         <div class="post-meta-container">
@@ -266,7 +238,7 @@
 <p>人本性就是反抗抵挡神，当神的命令临到时，即使是将要做的都会变得抗拒去做。人的肉体立意要反抗神，当听到律法时肉体立即反抗神的命令，当反抗神的命令时就被定罪。  </p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/#more" rel="contents">
+              <a class="btn" href="/2020/01/09/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A5/he/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -297,7 +269,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/">
+    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/he/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -315,7 +287,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅴ</a>
+          <a href="/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/he/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅴ</a>
         </h2>
 
         <div class="post-meta-container">
@@ -365,7 +337,7 @@
 <p>神起初创造众人是通过一对夫妇而造，而不是分别造很多单个个体。夫妻既为一体，人类便为一个共同体，亚当作为人类共同体的代表犯了罪，于是整个人类便都会背离神。<code>死又是从罪来的</code>，但是不单单是亚当一个人再罪中面对死，而是众人都要面对死，<code>因为众人都犯了罪</code>，这就意味着不单单是因为亚当犯了罪，众人因亚当的罪都面对死，而更是因为我们都与亚当的性情相同。亚当的性情就是想要通过某种训练超越人的限度，成为比现在更高的存在，并且在那个限度中成为自由自主的人，于是死就临到众人。  </p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/#more" rel="contents">
+              <a class="btn" href="/2019/12/28/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A4/he/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -396,7 +368,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/">
+    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/he/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -414,7 +386,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅳ</a>
+          <a href="/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/he/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅳ</a>
         </h2>
 
         <div class="post-meta-container">
@@ -464,7 +436,7 @@
 <p>在追溯讨神喜悦的原则上，保罗回到了犹太人的祖先也就是信心之父。从亚伯拉罕开始，神与一群人开始立约并形成恩待喜悦的关系。所以亚伯拉罕的神喜悦的原因就是神喜悦立约百姓的原因。其中旧约提到“<code>亚伯拉罕信神，这就算为他的义</code>(创15:6)。” 不是亚伯拉罕的义行足够，而是依靠神的信实，神就算为他义。 可是难道一个人真的在行为不完全时能够被被神喜悦并称义吗？ 不完全的人也就是无法达到律法要求的人，在神面前不是只有愤怒和责罚吗？  保罗随即解释道：既然按着律法的原则无法被神喜悦称义，那么有罪的人被称为无罪的必然是靠着另一种方式——福音、恩典。<code>做工的得工价，不算恩典，乃是该得的；</code>能够守全律法，并按着律法被称义，那是应当得的；<code>惟有不做工的，只信称罪人为义的　神，他的信就算为义</code> 我没有满足律法的要求，但是我相信神通过特定的方式而喜悦我，并投靠特定的拯救行为和被称义的原则，结果被神喜悦。正如大卫所说:“<code>得赦免其过、遮盖其罪的，这人是有福的。主不算为有罪的，这人是有福的。</code>”</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/#more" rel="contents">
+              <a class="btn" href="/2019/12/21/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A3/he/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -495,7 +467,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/">
+    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/he/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -513,7 +485,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅲ</a>
+          <a href="/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/he/" class="post-title-link" itemprop="url">圣经通解:罗马书Ⅲ</a>
         </h2>
 
         <div class="post-meta-container">
@@ -566,7 +538,7 @@
 <p>于是紧接着保罗抛出了一个论题：如此说来，神将自己的圣言和教训赐给犹太并没有使他们获得真正的益处，这样难道就是神的问题吗？<code>犹太人有什么长处呢？割礼有什么益处呢？</code>。保罗随即辩道：其实是大有益处：1.神将自己的圣言赐给犹太人，并不会因为犹太人没有听取而否定圣言的价值。而恰恰神是真实地，祂地话是可靠有效的，以致于显出犹太人的不信和虚谎，所以当神以不变、可靠、有效的话审查、判断并且定人的罪时，人被定罪也是理所当然。也就是说<code>你责备人的时候，显为公义；</code>  </p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/#more" rel="contents">
+              <a class="btn" href="/2019/12/01/%E5%9C%A3%E7%BB%8F%E9%80%9A%E8%A7%A3-%E7%BD%97%E9%A9%AC%E4%B9%A6%E2%85%A2/he/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -597,7 +569,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/">
+    <link itemprop="mainEntityOfPage" href="https://gpgao.top/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/he/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -615,7 +587,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/" class="post-title-link" itemprop="url">圣经笔记:罗马书3章21节-26节</a>
+          <a href="/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/he/" class="post-title-link" itemprop="url">圣经笔记:罗马书3章21节-26节</a>
         </h2>
 
         <div class="post-meta-container">
@@ -665,7 +637,7 @@
 <h3 id="祷告词"><a href="#祷告词" class="headerlink" title="祷告词"></a>祷告词</h3><p>主啊，孩子愚拙，凭人意无法理解你话的用意，但求你用圣灵开启孩子，使你圣经上的话是对孩子说的，求圣灵显明这话语的力量和甘甜。也求通过圣灵使孩子明白自己内心的干涸，明白话语源泉的浇灌，使孩子渴慕这宝贵的话语。<br>主，求你宽容忍耐孩子再多时，求主使孩子明白自己的罪多么地冒犯你，使孩子痛悔流涕地祈求你十字架的恩，使孩子得着你圣经所显明且已做成的恩。祷告奉主耶稣地名求。  </p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/#more" rel="contents">
+              <a class="btn" href="/2019/11/28/%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0%EF%BC%9A%E7%BD%97%E9%A9%AC%E4%B9%A63%EF%BC%9A21-26/he/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -751,11 +723,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
-<script src="/js/third-party/search/local-search.js"></script>
-
+  
 
 
 
